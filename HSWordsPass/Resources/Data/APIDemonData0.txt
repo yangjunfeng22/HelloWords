@@ -1,0 +1,412 @@
+﻿user/login = {
+	"Success":true,
+	"Message":"",
+	"User": 
+	{
+		"Uid":"8866",
+		"Email":"qq@qq.cn",
+		"Enabled":true,
+		"Enddate":"2016-12-31",
+		"Nickname":"QQ",
+		"Picture":""
+	}
+}
+
+user/registe
+{
+	"Success":true,
+	"Message":"",
+	"User": 
+	{
+		"Uid":"8866",
+		"Email":"qq@qq.cn",
+		"Enabled":true,
+		"Enddate":"2016-01-01"
+	}
+}
+
+book/category
+{
+	"Success":true,
+	"Message":"",
+	"Records":
+	[
+	   {
+		"Bcid":1,
+		"Name":"HSK",
+		"Picture":""
+	   },
+	   {
+		"Bcid":2,
+		"Name":"商务",
+		"Picture":""
+	   }
+	]
+}
+
+book/list
+{
+	"Success":true,
+	"Message":"",
+	"Records":
+	[
+	  {
+		"Bid":11,
+		"Bcid":1,
+		"Name":"HSK 一级",
+		"Picture":""
+	  },
+	  {
+		"Bid":12,
+		"Bcid":1,
+		"Name":"HSK 二级",
+		"Picture":""
+	  },
+	  {
+		"Bid":13,
+		"Bcid":1,
+		"Name":"HSK 三级",
+		"Picture":""
+	  },
+	  {
+		"Bid":14,
+		"Bcid":1,
+		"Name":"HSK 四级",
+		"Picture":""
+	  },
+	  {
+		"Bid":15,
+		"Bcid":1,
+		"Name":"HSK 五级",
+		"Picture":""
+	  },
+	  {
+		"Bid":16,
+		"Bcid":1,
+		"Name":"HSK 六级",
+		"Picture":""
+	  }
+	]
+}
+
+checkpoint/list
+{
+	"Success":true,
+	"Message":"",
+	"Records":
+	[
+		{
+			"Cpid":1,
+            "Bid":11,
+			"Name":"1",
+			"Index":0
+		},
+		{
+			"Cpid":2,
+            "Bid":11,
+			"Name":"2",
+			"Index":1
+		},
+		{
+			"Cpid":3,
+            "Bid":11,
+			"Name":"3",
+			"Index":2
+		},
+		{
+			"Cpid":4,
+            "Bid":11,
+			"Name":"4",
+			"Index":3
+		},
+		{
+			"Cpid":5,
+            "Bid":11,
+			"Name":"5",
+			"Index":4
+		}
+	]
+}
+
+progress/update
+{
+	"Success":true,
+	"Message":"",
+	"Uid":1000,
+	"Records":
+	[
+		{
+			"Cpid":1,
+            "Progress":0.95
+		},
+		{
+			"Cpid":2,
+            "Progress":0.5
+        }
+	]
+}
+
+word/list
+{
+	"Success":true,
+	"Message":"",
+	"Uid":"8866",
+	"Records":
+	[
+		{
+			"Wid":1,
+			"Chinese":"爱",
+			"Pinyin":"ài",
+			"Property":"动词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en",
+				 "Chinese":"love"
+			 },
+			"CheckPoint":[1]
+		},
+		{
+			"Wid":2,
+			"Chinese":"八",
+			"Pinyin":"bā",
+			"Property":"数词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"eight"
+			  },
+			"CheckPoint":[1]
+		},
+		{
+			"Wid":3,
+			"Chinese":"爸爸",
+			"Pinyin":"bàba",
+			"Property":"名词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"father;dad;daddy"
+			  },
+			"CheckPoint":[1]
+		},
+		{
+			"Wid":4,
+			"Chinese":"杯子",
+			"Pinyin":"bēizi",
+			"Property":"名词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"cup;glass"
+			  },
+			"CheckPoint":[1]
+		},
+		{
+			"Wid":5,
+			"Chinese":"北京",
+			"Pinyin":"Běijīng",
+			"Property":"名词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"Beijing"
+			  },
+			"CheckPoint":[1]
+		},
+		{
+			"Wid":6,
+			"Chinese":"本",
+			"Pinyin":"běn",
+			"Property":"名词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en",
+				 "Chinese":"notebook"
+			 },
+			"CheckPoint":[2]
+		},
+		{
+			"Wid":7,
+			"Chinese":"不",
+			"Pinyin":"bù",
+			"Property":"副词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"not;no"
+			  },
+			"CheckPoint":[2]
+		},
+		{
+			"Wid":8,
+			"Chinese":"不 客气",
+			"Pinyin":"bú kèqi",
+			"Property":"短语",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"You'er welcome."
+			  },
+			"CheckPoint":[2]
+		},
+		{
+			"Wid":9,
+			"Chinese":"菜",
+			"Pinyin":"cài",
+			"Property":"名词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"dish"
+			  },
+			"CheckPoint":[2]
+		},
+		{
+			"Wid":10,
+			"Chinese":"吃",
+			"Pinyin":"chī",
+			"Property":"动词",
+			"Audio":"",
+			"Picture":"",
+			"Translation":{
+				 "Language":"en"
+				 "Chinese":"eat"
+			  },
+			"CheckPoint":[2]
+		}
+	]
+}
+
+word/sentence
+{
+"Success":true,
+"Message":"",
+"Records":
+	[
+		{
+		   "Sid":1,
+		   "Chinese":"我 爱 我 的 家人",
+		   "Pinyin":"Wǒ ài wǒ de jiārén",
+		   "Audio":"",
+		   "Translate":{
+			 "Language":"en",
+			 "Chinese":"I love my family"
+			},
+			"Word":[1] 
+		},
+	   {
+			"Sid":2,
+			"Chinese":"我 买 了 八 个 苹果",
+			"Pinyin":"Wǒ mǎi le bā ge píngguǒ",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"I bought eight apples"
+			 },
+			"Word":[2] 
+	   },
+	   { 
+			"Sid":3,
+			"Chinese":"我 的 爸爸 是 医生 。",
+			"Pinyin":"Wǒ de bàba shì yīshēng .",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"My father is a doctor"
+			 },
+			"Word":[3] 
+	   },
+	   {	
+			"Sid":4,
+			"Chinese":"桌 上 有 一 个 杯子 。",
+			"Pinyin":"Zhuō shang yǒu yí ge bēizi",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"There is a cup on the table."
+			 },
+			"Word":[4] 
+	   },
+	   {
+			"Sid":5,
+			"Chinese":"北京 是 一 个 大 城市 。",
+			"Pinyin":"Běijīng shì yí ge dà chéngshì",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"Beijing is a big city"
+			 },
+			"Word":[5] 
+	   },
+	   {
+			"Sid":6,
+			"Chinese":"这 是 她 的 书本 。",
+			"Pinyin":"Zhè shì tā de shūběn",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"This is her book"
+			 },
+			"Word":[6] 
+	   },
+	   {
+			"Sid":7,
+			"Chinese":"不 好 意思 , 我 不 喝 冷 水 。",
+			"Pinyin":"Bù hǎo yìsi , wǒ bù hē lěnɡ shuǐ",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"Thanks! I don't drink cold water."
+			 },
+			"Word":[7] 
+	   },
+	   {
+			"Sid":8,
+			"Chinese":"不 客气 , 这 是 我 应该 做 的 。",
+			"Pinyin":"Bú kèqi , zhè shì wǒ yīnggāi zuò de",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"my pleasure"
+			 },
+			"Word":[8]
+	   },
+	   {
+			"Sid":9,
+			"Chinese":"今 晚 我 做 菜 , 希望 你 喜欢 。",
+			"Pinyin":"Jīn wǎn wǒ zuòcài , xīwàng nǐ xǐhuan",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"I do dishes tonight, hope you'll like it"
+			 },
+			"Word":[9]
+	   },
+	   {
+			"Sid":10,
+			"Chinese":"大卫 爱 吃 中国 菜 。",
+			"Pinyin":"Dàwèi ài chī Zhōngguó cài",
+			"Audio":"",
+			"Translate":{
+			  "Language":"en",
+			  "Chinese":"David like Chinese food"
+			 },
+			"Word":[10]
+	   }
+	]
+}
+
+
+
+
+
+

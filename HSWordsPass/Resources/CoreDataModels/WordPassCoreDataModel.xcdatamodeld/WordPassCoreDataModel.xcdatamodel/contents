@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BookCategoryModel" representedClassName="BookCategoryModel" syncable="YES">
+        <attribute name="cID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="BookCategoryTransModel" representedClassName="BookCategoryTransModel" syncable="YES">
+        <attribute name="cID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BookModel" representedClassName="BookModel" syncable="YES">
+        <attribute name="bID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="cID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showTone" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="BookTranslationModel" representedClassName="BookTranslationModel" syncable="YES">
+        <attribute name="bID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="CheckPoint_WordModel" representedClassName="CheckPoint_WordModel" syncable="YES">
+        <attribute name="cpID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cpWordShip" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WordModel" inverseName="wordCpShip" inverseEntity="WordModel" syncable="YES"/>
+        <fetchedProperty name="cpWord" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CheckPoint_WordModel" predicateString="wID == $FETCH_SOURCE.wID"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="CheckPointModel" representedClassName="CheckPointModel" syncable="YES">
+        <attribute name="bID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CheckPointProgressModel" representedClassName="CheckPointProgressModel" syncable="YES">
+        <attribute name="bID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cpID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SentenceModel" representedClassName="SentenceModel" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chinese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinyin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tAudio" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SentenceTranslationModel" representedClassName="SentenceTranslationModel" syncable="YES">
+        <attribute name="chinese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SoftwareVersionModel" representedClassName="SoftwareVersionModel" syncable="YES">
+        <attribute name="dbVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="launched" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="UserLaterStatuModel" representedClassName="UserLaterStatuModel" syncable="YES">
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkPointID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nexCheckPointID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserModel" representedClassName="UserModel" syncable="YES">
+        <attribute name="canMove" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enabled" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="laterLogin" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logined" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Word_SentenceModel" representedClassName="Word_SentenceModel" syncable="YES">
+        <attribute name="sID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WordLearnInfoModel" representedClassName="WordLearnInfoModel" syncable="YES">
+        <attribute name="cpID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rights" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sync" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wrongs" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="WordModel" representedClassName="WordModel" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chinese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinyin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tAudio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wordCpShip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckPoint_WordModel" inverseName="cpWordShip" inverseEntity="CheckPoint_WordModel" syncable="YES"/>
+        <fetchedProperty name="wordCheckpoint" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="CheckPoint_WordModel" predicateString="wID == $FETCH_SOURCE.wID"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="WordReviewModel" representedClassName="WordReviewModel" syncable="YES">
+        <attribute name="cpID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="WordTranslationModel" representedClassName="WordTranslationModel" syncable="YES">
+        <attribute name="chinese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BookCategoryModel" positionX="-108" positionY="-36" width="128" height="105"/>
+        <element name="BookCategoryTransModel" positionX="-90" positionY="104" width="128" height="103"/>
+        <element name="BookModel" positionX="205" positionY="-171" width="128" height="165"/>
+        <element name="BookTranslationModel" positionX="-108" positionY="-180" width="128" height="105"/>
+        <element name="CheckPoint_WordModel" positionX="214" positionY="18" width="128" height="116"/>
+        <element name="CheckPointModel" positionX="-270" positionY="-36" width="128" height="103"/>
+        <element name="CheckPointProgressModel" positionX="-281" positionY="89" width="128" height="133"/>
+        <element name="SentenceModel" positionX="61" positionY="257" width="128" height="118"/>
+        <element name="SentenceTranslationModel" positionX="-99" positionY="234" width="128" height="103"/>
+        <element name="SoftwareVersionModel" positionX="-272" positionY="-180" width="128" height="90"/>
+        <element name="UserLaterStatuModel" positionX="-279" positionY="231" width="128" height="135"/>
+        <element name="UserModel" positionX="-297" positionY="411" width="128" height="210"/>
+        <element name="Word_SentenceModel" positionX="-135" positionY="420" width="128" height="75"/>
+        <element name="WordLearnInfoModel" positionX="7" positionY="408" width="128" height="150"/>
+        <element name="WordModel" positionX="223" positionY="225" width="128" height="194"/>
+        <element name="WordReviewModel" positionX="63" positionY="117" width="128" height="118"/>
+        <element name="WordTranslationModel" positionX="61" positionY="-18" width="128" height="118"/>
+    </elements>
+</model>

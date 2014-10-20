@@ -1,0 +1,136 @@
+/* 
+  Localizable.strings
+  HSWordsPass
+
+  Created by Lu on 14-10-13.
+  Copyright (c) 2014年 yang. All rights reserved.
+*/
+
+
+//通用部分
+"网络不可用，请检查网络设置" = "Network unavailable,please check the network settings";
+"请输入正确的邮箱地址" = "Please input a valid e-mail address";
+"请输入邮箱地址" = "Please input the e-mail address";
+"请输入密码" = "Please input the password";
+"正在同步数据。。。" = "Data synchronizing";
+"用户名:" = "User name";
+"Email:" = "Email:";
+"密码:" = "Password:";
+"登录" = "Sign in";
+"忘记密码" = "Lost password";
+"注册" = "Register";
+"免费注册" = "Free registration";
+"随便看看" = "Look around";
+"设置" = "Settings";
+"关于我们" = "About us";
+"意见反馈" = "Feedback";
+"分享" = "Share";
+"商务" = "Business";
+"生活" = "Life";
+"正在发送消息。。。" = "Message delivering...";
+"检查更新" = "Check for updates";
+"正在检查更新" = "Updates checking…";
+"有新版本是否更新" = "New version is available! Update now?";
+"已经是最新版本" = "New version already";
+"立即更新" = "Update Now!";
+"请输入6-16个字符的密码" = "Please input 6-16 character password";
+"6-16个字符" = "6-16 characters";
+"删除" = "Delete";
+"删除成功" = "Delete successfully";
+"暂无数据" = "No data available ";
+"第_关" = "Level_";
+"取消" = "Cancel";
+"确定" = "Confirm";
+"评价我们" = "Rate us";
+"应用推荐" = "Featured App";
+"登出" = "Logout";
+"词汇通关" = "Hello Words";
+"请设置您的邮箱" = "Please set your mail box";
+"数据封装出错!" = "Data encapsulation error";
+"获取下载链接失败!" = "Failure to get the download link";
+"创建课程临时文件夹失败!" = "Failure to creat a temparory course folder";
+"创建课程文件夹失败!" = "Failure to creat a course folder";
+"打开待解压文件失败!" = "Failure to open the zipped files";
+
+
+//注册
+"邮箱已被注册" = "Email has been registered";
+"两次输入密码不一致" = "Entered passwords differ";
+"已有账号" = "Existing account";
+"确认密码" = "Confirm password";
+"再次输入您的密码" = "Input password again";
+
+
+//登录
+"用户不存在" = "Invalid username";
+"用户名与密码不匹配" = "User name and password unmatched";
+
+//课程分类
+"选择书本" = "Choose book";
+
+//关卡词汇
+"正在下载数据" = "Data downloading…";
+"下载数据失败" = "Data download failure";
+"解压文件失败" = "Failure to unzip the file";
+"本关还未解锁" = "This level remains to be locked";
+"正在获取关卡信息。。。" = "Accessing to the level information..";
+"继续学习" = "Continue";
+
+//词汇列表
+"开始学习" = "Learn";
+"开始测试" = "Test";
+"词汇学习" = "Vocab detail";
+
+//练习
+"退出" = "Exit";
+
+//答题卡
+"答题卡" = "Answer sheet";
+"交卷并查看结果" = "Submit to see results";
+"确定交卷吗？" = "Submit now?";
+"您还有题目未做,确定交卷吗?" = "Paper unfinished, submit now?";
+
+//生词本
+"生词本" = "Vocabulary list";
+"复习" = "Review";
+"测试" = "Test";
+"抱歉，需要5个以上的词才可以测试" = "Sorry,at least 5 words needed to start the test";
+"生词学习" = "New word learning";
+
+//词汇详情
+"上一词" = "Previous";
+"下一词" = "Next";
+"已加入生词本" = "Added to vocabulary notebook already";
+"已移出生词本" = "Aemoved from vocabulary notebook already";
+
+//测试报表
+"恭喜！已通过本关" = "Congratulations, you have passed this level";
+"恭喜！下一关已解锁" = "Congratulations, next level has been unlocked";
+"真遗憾！请继续加油" = "What a pity, please continue learning this level";
+"测试报表" = "Testing report";
+"对" = "Correct";
+"错" = "Wrong";
+"题" = "Question";
+"重新测试" = "Retest";
+"下一关" = "Next level";
+
+
+//新增一
+"更多。。。" = "More..";
+"松开即可加载" = "Loosen for loading";
+"下拉刷新" = "Pull-down to refresh";
+"松开即可刷新" = "Loosen for refreshing";
+"正在加载数据" = "Data loading…";
+
+"最后更新" = "Latest update";
+"开始体验" = "Start";
+
+"点击屏幕，重新加载" = "click for reloading";
+
+
+//首页浏览
+"他们在地铁里玩游戏，你在背单词……" = "While they are playing games on the subway , you are memorizing words…";
+"他们在酒吧里闲聊，你在背单词……" = "While they are chatting with each other in the bars , you are memorizing words…";
+"他们在等待时发呆，你在背单词……" = "While they are absent of mind during waiting , you are memorizing words…";
+"时间碎片的叠加，你就是学霸！" = "As time goes by, your Chinese level will be improved by accumulating more vocabularies.";
+"准备好了吗，开始今天的自我挑战吧！" = "Are you ready? How about starting your Chinese vocabulary learning now ? And Say it out aloud “I’m going to challenge myself” !";

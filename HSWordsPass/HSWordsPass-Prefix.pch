@@ -1,0 +1,54 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+//#ifdef  DEBUG_TEST
+#ifdef  DEBUG
+#define DLOG_METHOD NSLog(@"%s", __func__)
+#define DLOG_CMETHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd))
+#define DCOUNT(p) NSLog(@"%s(%d): rcount = %d\n", __func__, __LINE__, [p retainCount]);
+#define DLOG_TRACE(x) do {printf x; putchar('\n'); fflush(stdout);} while (0)
+#define DLog( s, ... ) NSLog( @"<%@:(%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#else
+#define DLOG_METHOD
+#define DLOG_CMETHOD
+#define DCOUNT(p)
+#define DLOG_TRACE(x)
+#define DLog( s, ... )
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+
+    #import "GAI.h"
+
+    #import "GAIFields.h"
+
+
+
+    #import "CommonHelper.h"
+
+    #import "constants.h"
+    #import "Notification.h"
+    #import "EnumManager.h"
+    #import "HsExpand.h"
+    #import "HSGlobalMacro.h"
+    #import "HSBaseTool.h"
+
+    #import "AudioPlayHelper.h"
+
+    //#import <CocoaLumberjack/DDLog.h>
+//#define MR_LOGGING_ENABLED 1
+#define MR_SHORTHAND
+    #import "CoreData+MagicalRecord.h"
+#endif

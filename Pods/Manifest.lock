@@ -1,0 +1,49 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/Core
+    - ASIHTTPRequest/S3
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - MBProgressHUD (0.8)
+  - OpenUDID (1.0.0)
+  - pop (1.0.2)
+  - Reachability (3.1.1)
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
+  - STTwitter (0.1.2)
+  - TTTAttributedLabel (1.9.5)
+
+DEPENDENCIES:
+  - ASIHTTPRequest (~> 1.8.2)
+  - MagicalRecord (~> 2.2)
+  - MBProgressHUD (~> 0.8)
+  - OpenUDID (~> 1.0.0)
+  - pop (~> 1.0)
+  - SDWebImage (~> 3.6)
+  - STTwitter (~> 0.1.2)
+  - TTTAttributedLabel (~> 1.9.5)
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 0b05282cf3c422c3474eff98c5bb8c1192b91b86
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  OpenUDID: 04a7c560c47869bc5194820e3b529d4504cc0296
+  pop: 55f6c972fbfb644dfcf1bd6892d001feaa32cc38
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
+  STTwitter: b46bef092a1585abd1bdafc8b2b92048a37a14fc
+  TTTAttributedLabel: 6154fd2407a03fb8d71abfa36f4710fff26a168e
+
+COCOAPODS: 0.34.4
